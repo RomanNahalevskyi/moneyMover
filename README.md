@@ -1,4 +1,4 @@
-# .
+## Project deployed on vercel: https://west-solutions-task.vercel.app/
 
 This template should help get you started developing with Vue 3 in Vite.
 
