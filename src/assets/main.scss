@@ -1,0 +1,60 @@
+:root,
+::backdrop {
+    --white: #fff;
+    --black: #101820;
+    --red: #be5944;
+    --green: #0cb877;
+    --lightBlue: #66b2ff;
+    --blue: #0059b2;
+    --gold: #ffd700;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--black);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, var(--green) 0 21rem, var(--white) 20rem 100%) no-repeat;
+}
+
+#app {
+    max-width: 96rem;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--green);
+}
+
+@media (hover: hover) {
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .button:hover {
+        color: var(--white);
+        background: var(--black);
+        border-color: var(--black);
+    }
+
+    .button--primary:hover {
+        box-shadow: 5px 5px 0 var(--green);
+    }
+}
